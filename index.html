@@ -12,399 +12,114 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark">⛑️</span>
-        <span class="brand-text">ifyojuh.com</span>
-      </a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#">
+      <span class="brand-mark">⛑️</span>
+      <span class="brand-text">ifyojuh.com</span>
+    </a>
 
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#labs">Labs</a>
-        <a href="#writing">Writing</a>
-        <a href="#contact" class="nav-cta">Contact</a>
-      </nav>
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#labs">Labs</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="pill">DevOps • SRE • Reliability Engineering</p>
+      <h1>I build <span class="grad">reliable</span> systems with automation & observability.</h1>
+      <p class="lede">
+        Hi, I’m <strong>Ifeanyi (Ify) Ojuh</strong>. I design and operate resilient infrastructure using
+        Linux, Docker, monitoring, and incident-ready workflows.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Hire / Collaborate</a>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="main">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="pill">DevOps • SRE • Reliability Engineering</p>
-          <h1>
-            I build <span class="grad">reliable</span> systems with automation,
-            observability, and clean operations.
-          </h1>
-          <p class="lede">
-            Hi, I’m <strong>Ifeanyi (Ify) Ojuh</strong>. I enjoy turning infrastructure problems into
-            stable, measurable systems—using Linux, CI/CD, IaC, monitoring, and incident-ready runbooks.
-          </p>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Featured Projects</h2>
+      <p class="muted">Real infrastructure, real monitoring, real proof.</p>
+    </div>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn" href="#contact">Hire / Collaborate</a>
-          </div>
+    <div class="grid cards">
 
-          <div class="quick-links">
-            <a href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub</a>
-            <span>•</span>
-            <a href="https://drive.google.com/file/d/1FgcS36I2xhfCpjrJEjcvjH7dmQx8b2LA/view?usp=drive_link" target="_blank" rel="noreferrer">Resume (PDF)</a>
-            <span>•</span>
-            <a href="mailto:ifeanyiojuh@gmail.com">Email</a>
-          </div>
-
-          <div class="metrics">
-            <div class="metric">
-              <div class="metric-top">Focus</div>
-              <div class="metric-val">Uptime & MTTR</div>
-            </div>
-            <div class="metric">
-              <div class="metric-top">Strength</div>
-              <div class="metric-val">Automation</div>
-            </div>
-            <div class="metric">
-              <div class="metric-top">Tooling</div>
-              <div class="metric-val">Linux • Git • Cloud</div>
-            </div>
-          </div>
+      <!-- 🔥 NEW HOMELAB PROJECT -->
+      <article class="card project">
+        <div class="project-top">
+          <h3>DevOps / SRE Homelab (Multi-Node)</h3>
+          <p class="muted">VirtualBox • Ubuntu • Docker • Prometheus • Grafana</p>
         </div>
 
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-top">
-              <div class="status-dot"></div>
-              <span>Reliability Snapshot</span>
-            </div>
+        <p>
+          Built a 3-node homelab to simulate production-style SRE workflows including
+          Linux administration, containerized workloads, and full observability.
+        </p>
 
-            <div class="card-body">
-              <div class="mini">
-                <div class="mini-title">Service Level Objective</div>
-                <div class="mini-row">
-                  <span class="mini-k">Availability</span>
-                  <span class="mini-v">99.9%</span>
-                </div>
-                <div class="mini-row">
-                  <span class="mini-k">Latency (p95)</span>
-                  <span class="mini-v">&lt; 250ms</span>
-                </div>
-                <div class="mini-row">
-                  <span class="mini-k">Error budget</span>
-                  <span class="mini-v">Controlled</span>
-                </div>
-              </div>
+        <img
+          class="project-media"
+          src="https://raw.githubusercontent.com/ifyojuh/Devops-sre-homelab/main/screenshots/grafana-dashboard.png"
+          alt="Grafana dashboard from homelab"
+          loading="lazy"
+        />
 
-              <div class="divider"></div>
+        <ul class="bullets">
+          <li>Provisioned infra-node, docker-node, and monitor-node with SSH access</li>
+          <li>Installed Docker and deployed Nginx container with port forwarding</li>
+          <li>Configured Prometheus + Node Exporter and visualized metrics in Grafana</li>
+        </ul>
 
-              <div class="mini">
-                <div class="mini-title">What I ship</div>
-                <ul class="bullets">
-                  <li>Dashboards + alerts that catch issues early</li>
-                  <li>IaC that’s repeatable and reviewable</li>
-                  <li>Runbooks that reduce panic during incidents</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card-footer">
-              <span class="tag">Observability</span>
-              <span class="tag">IaC</span>
-              <span class="tag">Incident Response</span>
-            </div>
-          </div>
+        <div class="card-footer">
+          <span class="tag">Linux</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Observability</span>
+          <a class="link" href="https://github.com/ifyojuh/Devops-sre-homelab" target="_blank">GitHub →</a>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Featured Projects</h2>
-          <p class="muted">Proof of work. Each project includes architecture, decisions, and what I learned.</p>
-        </div>
+    </div>
+  </div>
+</section>
 
-        <div class="grid cards">
-          <article class="card project">
-            <div class="project-top">
-              <h3>Monitoring Stack Lab</h3>
-              <p class="muted">Prometheus + Grafana + Alertmanager (VM / Docker)</p>
-            </div>
-            <p>
-              Built an end-to-end observability stack with dashboards and alerts to detect CPU, memory,
-              disk, and service-health issues before users notice.
-            </p>
-            <ul class="bullets">
-              <li>Dashboards: node exporter, app metrics, latency</li>
-              <li>Alerts: disk &gt; 80%, service down, high error rate</li>
-              <li>Runbooks: step-by-step response playbooks</li>
-            </ul>
-            <div class="card-footer">
-              <span class="tag">Prometheus</span>
-              <span class="tag">Grafana</span>
-              <span class="tag">Alerting</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
+<!-- CONTACT -->
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Let’s build something reliable.</h2>
+    <p class="muted">Open to DevOps / SRE roles and collaborations.</p>
+    <a class="btn primary" href="mailto:ifeanyiojuh@gmail.com">Email me</a>
+  </div>
+</section>
 
-          <article class="card project">
-            <div class="project-top">
-              <h3>Log Pipeline (ELK)</h3>
-              <p class="muted">Filebeat → Logstash → Elasticsearch → Kibana</p>
-            </div>
-            <p>
-              Centralized system and application logs, added parsing rules, and built Kibana dashboards
-              for faster debugging and incident triage.
-            </p>
-            <ul class="bullets">
-              <li>Structured fields for HTTP status, response time, host</li>
-              <li>Kibana views for error spikes and top failing endpoints</li>
-              <li>Retention + index lifecycle strategy (basic)</li>
-            </ul>
-            <div class="card-footer">
-              <span class="tag">ELK</span>
-              <span class="tag">Log Parsing</span>
-              <span class="tag">Dashboards</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
+</main>
 
-          <article class="card project">
-            <div class="project-top">
-              <h3>CI/CD Pipeline</h3>
-              <p class="muted">GitHub Actions → Docker build → Deploy</p>
-            </div>
-            <p>
-              Automated build/test/deploy for a small web service. Reduced manual steps, ensured repeatable
-              releases, and added basic checks.
-            </p>
-            <ul class="bullets">
-              <li>Build + test on PRs</li>
-              <li>Docker image publish on merge</li>
-              <li>Deploy to VM with rollback notes</li>
-            </ul>
-            <div class="card-footer">
-              <span class="tag">GitHub Actions</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Release</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
+<script>
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
+toggle?.addEventListener('click', () => {
+  nav.classList.toggle('open');
+});
+</script>
 
-          <article class="card project">
-            <div class="project-top">
-              <h3>Terraform AWS VPC</h3>
-              <p class="muted">VPC + subnets + routing + security groups</p>
-            </div>
-            <p>
-              Infrastructure-as-code example showing a clean, modular Terraform setup with variables,
-              outputs, remote state notes, and reusable modules.
-            </p>
-            <ul class="bullets">
-              <li>Public/private subnets + route tables</li>
-              <li>Security group patterns (least privilege)</li>
-              <li>README with “how to apply safely”</li>
-            </ul>
-            <div class="card-footer">
-              <span class="tag">Terraform</span>
-              <span class="tag">AWS</span>
-              <span class="tag">IaC</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills (with receipts)</h2>
-          <p class="muted">I prefer showing evidence in projects, runbooks, dashboards, and repos.</p>
-        </div>
-
-        <div class="grid skills">
-          <div class="card">
-            <h3>Linux & Troubleshooting</h3>
-            <p class="muted">Processes, networking, logs, performance basics.</p>
-            <div class="chips">
-              <span class="chip">systemd</span><span class="chip">journalctl</span><span class="chip">top/htop</span>
-              <span class="chip">ss/netstat</span><span class="chip">curl</span><span class="chip">bash</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Observability</h3>
-            <p class="muted">Metrics, dashboards, alerting, logging pipelines.</p>
-            <div class="chips">
-              <span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Alertmanager</span>
-              <span class="chip">ELK/Kibana</span><span class="chip">SLOs</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Automation & CI/CD</h3>
-            <p class="muted">Repeatable pipelines and safer releases.</p>
-            <div class="chips">
-              <span class="chip">Git</span><span class="chip">GitHub Actions</span><span class="chip">Docker</span>
-              <span class="chip">Python</span><span class="chip">Bash</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Cloud & IaC</h3>
-            <p class="muted">Deployments that can be reviewed and reproduced.</p>
-            <div class="chips">
-              <span class="chip">Terraform</span><span class="chip">AWS basics</span><span class="chip">Networking</span>
-              <span class="chip">IAM basics</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LABS -->
-    <section id="labs" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Labs & Incident Simulations</h2>
-          <p class="muted">Small experiments that build real operational confidence.</p>
-        </div>
-
-        <div class="grid labs">
-          <article class="card">
-            <h3>Incident Drill: “Disk Full”</h3>
-            <p>
-              Simulated a disk saturation event, detected it via alerting, traced the culprit logs, applied
-              cleanup, and documented prevention steps.
-            </p>
-            <div class="card-footer">
-              <span class="tag">Runbook</span>
-              <span class="tag">Alerting</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Incident Drill: “502 Bad Gateway”</h3>
-            <p>
-              Reproduced a 502 with an upstream service crash, validated Nginx behavior, added health checks,
-              and improved logs for faster triage.
-            </p>
-            <div class="card-footer">
-              <span class="tag">Nginx</span>
-              <span class="tag">Debugging</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Vagrant: Local SRE Sandbox</h3>
-            <p>
-              Built repeatable local environments for Linux practice: provisioning, services, networking, and
-              “break/fix” exercises.
-            </p>
-            <div class="card-footer">
-              <span class="tag">Vagrant</span>
-              <span class="tag">Linux</span>
-              <a class="link" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">GitHub →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WRITING -->
-    <section id="writing" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Writing</h2>
-          <p class="muted">Short posts that show how I think during outages and improvements.</p>
-        </div>
-
-        <div class="grid writing">
-          <a class="card writing-item" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">
-            <h3>How I debug a failing Linux service</h3>
-            <p class="muted">A practical checklist: logs, process, ports, resources, config.</p>
-            <span class="link">Read →</span>
-          </a>
-
-          <a class="card writing-item" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">
-            <h3>What I learned building Prometheus alerts</h3>
-            <p class="muted">Avoid alert fatigue and write better runbooks.</p>
-            <span class="link">Read →</span>
-          </a>
-
-          <a class="card writing-item" href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">
-            <h3>Terraform mistakes I stopped making</h3>
-            <p class="muted">State, modules, naming, and safe changes.</p>
-            <span class="link">Read →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-card">
-          <div>
-            <h2>Let’s build something reliable.</h2>
-            <p class="muted">
-              If you’re hiring for DevOps/SRE or want to collaborate, reach out. I respond fast.
-            </p>
-            <div class="contact-actions">
-              <a class="btn primary" href="mailto:ifeanyiojuh@gmail.com">Email me</a>
-              <a class="btn" href="https://drive.google.com/file/d/1FgcS36I2xhfCpjrJEjcvjH7dmQx8b2LA/view?usp=drive_link" target="_blank" rel="noreferrer">View Resume</a>
-            </div>
-          </div>
-
-          <div class="contact-meta">
-            <div class="meta-row">
-              <span class="meta-k">Location</span>
-              <span class="meta-v">Fort Worth, TX</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-k">Open to</span>
-              <span class="meta-v">Remote / Hybrid</span>
-            </div>
-            <div class="meta-row">
-              <span class="meta-k">GitHub</span>
-              <span class="meta-v"><a href="https://github.com/ifyojuh" target="_blank" rel="noreferrer">github.com/ifyojuh</a></span>
-            </div>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <span>© <span id="year"></span> Ifeanyi Ojuh</span>
-          <span class="sep">•</span>
-          <span class="muted">Built with GitHub Pages</span>
-        </footer>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    // Mobile nav
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    toggle?.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
